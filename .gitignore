@@ -10,3 +10,15 @@
 *.lai
 *.la
 *.a
+
+# Build folders
+Debug
+Release
+
+# VC++ junk
+ipch
+
+# Binaries
+*.exe
+*.lib
+
