@@ -1,0 +1,10 @@
+# Build folders
+Debug
+Release
+
+# VC++ junk
+ipch
+
+# Binaries
+*.exe
+*.lib
