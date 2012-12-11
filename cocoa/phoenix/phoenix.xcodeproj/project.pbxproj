@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6775E1E1676338500117129 /* libLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E7AB651676254400D444A9 /* libLua.a */; };
+		F6775E8E16763D7900117129 /* libglew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E7ACC8167630A600D444A9 /* libglew.a */; };
+		F67760AC167640D900117129 /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F67760AB167640BF00117129 /* libglfw.a */; };
+		F6A0A8C21651429100AD429B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A0A8C11651429100AD429B /* Cocoa.framework */; };
+		F6A0A8CC1651429100AD429B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6A0A8CA1651429100AD429B /* InfoPlist.strings */; };
+		F6A0A8D21651429100AD429B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6A0A8D01651429100AD429B /* Credits.rtf */; };
+		F6A0A8D51651429100AD429B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A8D41651429100AD429B /* AppDelegate.m */; };
+		F6A0A8D81651429200AD429B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A0A8D61651429200AD429B /* MainMenu.xib */; };
+		F6A0A8E01651429200AD429B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A0A8DF1651429200AD429B /* SenTestingKit.framework */; };
+		F6A0A8E11651429200AD429B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A0A8C11651429100AD429B /* Cocoa.framework */; };
+		F6A0A8E91651429200AD429B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6A0A8E71651429200AD429B /* InfoPlist.strings */; };
+		F6A0A8EC1651429200AD429B /* phoenixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A8EB1651429200AD429B /* phoenixTests.m */; };
+		F6A0A9121651433000AD429B /* compDecl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A8F51651433000AD429B /* compDecl.cpp */; };
+		F6A0A9131651433000AD429B /* compLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A8F71651433000AD429B /* compLua.cpp */; };
+		F6A0A9141651433000AD429B /* component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A8F91651433000AD429B /* component.cpp */; };
+		F6A0A9151651433000AD429B /* componentStore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A8FB1651433000AD429B /* componentStore.cpp */; };
+		F6A0A9161651433000AD429B /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A8FE1651433000AD429B /* entity.cpp */; };
+		F6A0A9171651433000AD429B /* entityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A9001651433000AD429B /* entityManager.cpp */; };
+		F6A0A9181651433000AD429B /* gl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A9021651433000AD429B /* gl.cpp */; };
+		F6A0A9191651433000AD429B /* luaMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A9041651433000AD429B /* luaMap.cpp */; };
+		F6A0A91A1651433000AD429B /* luaSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A9061651433000AD429B /* luaSystem.cpp */; };
+		F6A0A91B1651433000AD429B /* luaTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A9071651433000AD429B /* luaTest.cpp */; };
+		F6A0A91C1651433000AD429B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A9091651433000AD429B /* main.cpp */; };
+		F6A0A91D1651433000AD429B /* movementSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A90A1651433000AD429B /* movementSystem.cpp */; };
+		F6A0A91E1651433000AD429B /* perfMeasureSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A90B1651433000AD429B /* perfMeasureSystem.cpp */; };
+		F6A0A91F1651433000AD429B /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A90D1651433000AD429B /* system.cpp */; };
+		F6A0A9201651433000AD429B /* testRenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A90F1651433000AD429B /* testRenderSystem.cpp */; };
+		F6A0A9211651433000AD429B /* world.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0A9101651433000AD429B /* world.cpp */; };
+		F6B2635E1652F1F7004445C7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B2635D1652F1F7004445C7 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F67760AA167640BF00117129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F67760A3167640BE00117129 /* glfw.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6775F1816763FE700117129;
+			remoteInfo = glfw;
+		};
+		F6A0A8E21651429200AD429B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A0A8B41651429100AD429B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A0A8BC1651429100AD429B;
+			remoteInfo = phoenix;
+		};
+		F6E7AB641676254400D444A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6E7AB5D1676254300D444A9 /* Lua.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6E7AAE0167624B000D444A9;
+			remoteInfo = Lua;
+		};
+		F6E7ACC7167630A600D444A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6E7ACC3167630A500D444A9 /* glew.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6E7ACB616762FE800D444A9;
+			remoteInfo = glew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F67760A3167640BE00117129 /* glfw.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = glfw.xcodeproj; path = ../glfw/glfw.xcodeproj; sourceTree = "<group>"; };
+		F6A0A8BD1651429100AD429B /* phoenix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoenix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A0A8C11651429100AD429B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F6A0A8C41651429100AD429B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F6A0A8C51651429100AD429B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6A0A8C61651429100AD429B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6A0A8C91651429100AD429B /* phoenix-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "phoenix-Info.plist"; sourceTree = "<group>"; };
+		F6A0A8CB1651429100AD429B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6A0A8CF1651429100AD429B /* phoenix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "phoenix-Prefix.pch"; sourceTree = "<group>"; };
+		F6A0A8D11651429100AD429B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F6A0A8D31651429100AD429B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6A0A8D41651429100AD429B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6A0A8D71651429200AD429B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F6A0A8DE1651429200AD429B /* phoenixTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phoenixTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A0A8DF1651429200AD429B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6A0A8E61651429200AD429B /* phoenixTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "phoenixTests-Info.plist"; sourceTree = "<group>"; };
+		F6A0A8E81651429200AD429B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6A0A8EA1651429200AD429B /* phoenixTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phoenixTests.h; sourceTree = "<group>"; };
+		F6A0A8EB1651429200AD429B /* phoenixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phoenixTests.m; sourceTree = "<group>"; };
+		F6A0A8F51651433000AD429B /* compDecl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compDecl.cpp; path = ../../../src/compDecl.cpp; sourceTree = "<group>"; };
+		F6A0A8F61651433000AD429B /* compDecl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compDecl.h; path = ../../../src/compDecl.h; sourceTree = "<group>"; };
+		F6A0A8F71651433000AD429B /* compLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compLua.cpp; path = ../../../src/compLua.cpp; sourceTree = "<group>"; };
+		F6A0A8F81651433000AD429B /* compLua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compLua.h; path = ../../../src/compLua.h; sourceTree = "<group>"; };
+		F6A0A8F91651433000AD429B /* component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = component.cpp; path = ../../../src/component.cpp; sourceTree = "<group>"; };
+		F6A0A8FA1651433000AD429B /* component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = component.h; path = ../../../src/component.h; sourceTree = "<group>"; };
+		F6A0A8FB1651433000AD429B /* componentStore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = componentStore.cpp; path = ../../../src/componentStore.cpp; sourceTree = "<group>"; };
+		F6A0A8FC1651433000AD429B /* componentStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = componentStore.h; path = ../../../src/componentStore.h; sourceTree = "<group>"; };
+		F6A0A8FD1651433000AD429B /* compTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compTypes.h; path = ../../../src/compTypes.h; sourceTree = "<group>"; };
+		F6A0A8FE1651433000AD429B /* entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = entity.cpp; path = ../../../src/entity.cpp; sourceTree = "<group>"; };
+		F6A0A8FF1651433000AD429B /* entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entity.h; path = ../../../src/entity.h; sourceTree = "<group>"; };
+		F6A0A9001651433000AD429B /* entityManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = entityManager.cpp; path = ../../../src/entityManager.cpp; sourceTree = "<group>"; };
+		F6A0A9011651433000AD429B /* entityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entityManager.h; path = ../../../src/entityManager.h; sourceTree = "<group>"; };
+		F6A0A9021651433000AD429B /* gl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl.cpp; path = ../../../src/gl.cpp; sourceTree = "<group>"; };
+		F6A0A9031651433000AD429B /* gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gl.h; path = ../../../src/gl.h; sourceTree = "<group>"; };
+		F6A0A9041651433000AD429B /* luaMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = luaMap.cpp; path = ../../../src/luaMap.cpp; sourceTree = "<group>"; };
+		F6A0A9051651433000AD429B /* luaMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = luaMap.h; path = ../../../src/luaMap.h; sourceTree = "<group>"; };
+		F6A0A9061651433000AD429B /* luaSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = luaSystem.cpp; path = ../../../src/luaSystem.cpp; sourceTree = "<group>"; };
+		F6A0A9071651433000AD429B /* luaTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = luaTest.cpp; path = ../../../src/luaTest.cpp; sourceTree = "<group>"; };
+		F6A0A9081651433000AD429B /* luaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = luaTest.h; path = ../../../src/luaTest.h; sourceTree = "<group>"; };
+		F6A0A9091651433000AD429B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../src/main.cpp; sourceTree = "<group>"; };
+		F6A0A90A1651433000AD429B /* movementSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = movementSystem.cpp; path = ../../../src/movementSystem.cpp; sourceTree = "<group>"; };
+		F6A0A90B1651433000AD429B /* perfMeasureSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = perfMeasureSystem.cpp; path = ../../../src/perfMeasureSystem.cpp; sourceTree = "<group>"; };
+		F6A0A90C1651433000AD429B /* sysDecl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sysDecl.h; path = ../../../src/sysDecl.h; sourceTree = "<group>"; };
+		F6A0A90D1651433000AD429B /* system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = system.cpp; path = ../../../src/system.cpp; sourceTree = "<group>"; };
+		F6A0A90E1651433000AD429B /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = system.h; path = ../../../src/system.h; sourceTree = "<group>"; };
+		F6A0A90F1651433000AD429B /* testRenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = testRenderSystem.cpp; path = ../../../src/testRenderSystem.cpp; sourceTree = "<group>"; };
+		F6A0A9101651433000AD429B /* world.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = world.cpp; path = ../../../src/world.cpp; sourceTree = "<group>"; };
+		F6A0A9111651433000AD429B /* world.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = world.h; path = ../../../src/world.h; sourceTree = "<group>"; };
+		F6B2635D1652F1F7004445C7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F6E7AB5D1676254300D444A9 /* Lua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lua.xcodeproj; path = ../Lua/Lua.xcodeproj; sourceTree = "<group>"; };
+		F6E7ACC3167630A500D444A9 /* glew.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = glew.xcodeproj; path = ../glew/glew.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6A0A8BA1651429100AD429B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67760AC167640D900117129 /* libglfw.a in Frameworks */,
+				F6775E8E16763D7900117129 /* libglew.a in Frameworks */,
+				F6775E1E1676338500117129 /* libLua.a in Frameworks */,
+				F6B2635E1652F1F7004445C7 /* OpenGL.framework in Frameworks */,
+				F6A0A8C21651429100AD429B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A0A8DA1651429200AD429B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A0A8E01651429200AD429B /* SenTestingKit.framework in Frameworks */,
+				F6A0A8E11651429200AD429B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F67760A4167640BE00117129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F67760AB167640BF00117129 /* libglfw.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6A0A8B21651429100AD429B = {
+			isa = PBXGroup;
+			children = (
+				F67760A3167640BE00117129 /* glfw.xcodeproj */,
+				F6E7ACC3167630A500D444A9 /* glew.xcodeproj */,
+				F6E7AB5D1676254300D444A9 /* Lua.xcodeproj */,
+				F6B2635D1652F1F7004445C7 /* OpenGL.framework */,
+				F6A0A8C71651429100AD429B /* phoenix */,
+				F6A0A8E41651429200AD429B /* phoenixTests */,
+				F6A0A8C01651429100AD429B /* Frameworks */,
+				F6A0A8BE1651429100AD429B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6A0A8BE1651429100AD429B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0A8BD1651429100AD429B /* phoenix.app */,
+				F6A0A8DE1651429200AD429B /* phoenixTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6A0A8C01651429100AD429B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0A8C11651429100AD429B /* Cocoa.framework */,
+				F6A0A8DF1651429200AD429B /* SenTestingKit.framework */,
+				F6A0A8C31651429100AD429B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6A0A8C31651429100AD429B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0A8C41651429100AD429B /* AppKit.framework */,
+				F6A0A8C51651429100AD429B /* CoreData.framework */,
+				F6A0A8C61651429100AD429B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F6A0A8C71651429100AD429B /* phoenix */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0A8F51651433000AD429B /* compDecl.cpp */,
+				F6A0A8F61651433000AD429B /* compDecl.h */,
+				F6A0A8F71651433000AD429B /* compLua.cpp */,
+				F6A0A8F81651433000AD429B /* compLua.h */,
+				F6A0A8F91651433000AD429B /* component.cpp */,
+				F6A0A8FA1651433000AD429B /* component.h */,
+				F6A0A8FB1651433000AD429B /* componentStore.cpp */,
+				F6A0A8FC1651433000AD429B /* componentStore.h */,
+				F6A0A8FD1651433000AD429B /* compTypes.h */,
+				F6A0A8FE1651433000AD429B /* entity.cpp */,
+				F6A0A8FF1651433000AD429B /* entity.h */,
+				F6A0A9001651433000AD429B /* entityManager.cpp */,
+				F6A0A9011651433000AD429B /* entityManager.h */,
+				F6A0A9021651433000AD429B /* gl.cpp */,
+				F6A0A9031651433000AD429B /* gl.h */,
+				F6A0A9041651433000AD429B /* luaMap.cpp */,
+				F6A0A9051651433000AD429B /* luaMap.h */,
+				F6A0A9061651433000AD429B /* luaSystem.cpp */,
+				F6A0A9071651433000AD429B /* luaTest.cpp */,
+				F6A0A9081651433000AD429B /* luaTest.h */,
+				F6A0A9091651433000AD429B /* main.cpp */,
+				F6A0A90A1651433000AD429B /* movementSystem.cpp */,
+				F6A0A90B1651433000AD429B /* perfMeasureSystem.cpp */,
+				F6A0A90C1651433000AD429B /* sysDecl.h */,
+				F6A0A90D1651433000AD429B /* system.cpp */,
+				F6A0A90E1651433000AD429B /* system.h */,
+				F6A0A90F1651433000AD429B /* testRenderSystem.cpp */,
+				F6A0A9101651433000AD429B /* world.cpp */,
+				F6A0A9111651433000AD429B /* world.h */,
+				F6A0A8D31651429100AD429B /* AppDelegate.h */,
+				F6A0A8D41651429100AD429B /* AppDelegate.m */,
+				F6A0A8D61651429200AD429B /* MainMenu.xib */,
+				F6A0A8C81651429100AD429B /* Supporting Files */,
+			);
+			path = phoenix;
+			sourceTree = "<group>";
+		};
+		F6A0A8C81651429100AD429B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0A8C91651429100AD429B /* phoenix-Info.plist */,
+				F6A0A8CA1651429100AD429B /* InfoPlist.strings */,
+				F6A0A8CF1651429100AD429B /* phoenix-Prefix.pch */,
+				F6A0A8D01651429100AD429B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6A0A8E41651429200AD429B /* phoenixTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0A8EA1651429200AD429B /* phoenixTests.h */,
+				F6A0A8EB1651429200AD429B /* phoenixTests.m */,
+				F6A0A8E51651429200AD429B /* Supporting Files */,
+			);
+			path = phoenixTests;
+			sourceTree = "<group>";
+		};
+		F6A0A8E51651429200AD429B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0A8E61651429200AD429B /* phoenixTests-Info.plist */,
+				F6A0A8E71651429200AD429B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6E7AB5E1676254300D444A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6E7AB651676254400D444A9 /* libLua.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6E7ACC4167630A500D444A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6E7ACC8167630A600D444A9 /* libglew.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6A0A8BC1651429100AD429B /* phoenix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A0A8EF1651429200AD429B /* Build configuration list for PBXNativeTarget "phoenix" */;
+			buildPhases = (
+				F6A0A8B91651429100AD429B /* Sources */,
+				F6A0A8BA1651429100AD429B /* Frameworks */,
+				F6A0A8BB1651429100AD429B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = phoenix;
+			productName = phoenix;
+			productReference = F6A0A8BD1651429100AD429B /* phoenix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6A0A8DD1651429200AD429B /* phoenixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A0A8F21651429200AD429B /* Build configuration list for PBXNativeTarget "phoenixTests" */;
+			buildPhases = (
+				F6A0A8D91651429200AD429B /* Sources */,
+				F6A0A8DA1651429200AD429B /* Frameworks */,
+				F6A0A8DB1651429200AD429B /* Resources */,
+				F6A0A8DC1651429200AD429B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A0A8E31651429200AD429B /* PBXTargetDependency */,
+			);
+			name = phoenixTests;
+			productName = phoenixTests;
+			productReference = F6A0A8DE1651429200AD429B /* phoenixTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6A0A8B41651429100AD429B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Tobias Svensson";
+			};
+			buildConfigurationList = F6A0A8B71651429100AD429B /* Build configuration list for PBXProject "phoenix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6A0A8B21651429100AD429B;
+			productRefGroup = F6A0A8BE1651429100AD429B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F6E7ACC4167630A500D444A9 /* Products */;
+					ProjectRef = F6E7ACC3167630A500D444A9 /* glew.xcodeproj */;
+				},
+				{
+					ProductGroup = F67760A4167640BE00117129 /* Products */;
+					ProjectRef = F67760A3167640BE00117129 /* glfw.xcodeproj */;
+				},
+				{
+					ProductGroup = F6E7AB5E1676254300D444A9 /* Products */;
+					ProjectRef = F6E7AB5D1676254300D444A9 /* Lua.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F6A0A8BC1651429100AD429B /* phoenix */,
+				F6A0A8DD1651429200AD429B /* phoenixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F67760AB167640BF00117129 /* libglfw.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglfw.a;
+			remoteRef = F67760AA167640BF00117129 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6E7AB651676254400D444A9 /* libLua.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLua.a;
+			remoteRef = F6E7AB641676254400D444A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6E7ACC8167630A600D444A9 /* libglew.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglew.a;
+			remoteRef = F6E7ACC7167630A600D444A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6A0A8BB1651429100AD429B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A0A8CC1651429100AD429B /* InfoPlist.strings in Resources */,
+				F6A0A8D21651429100AD429B /* Credits.rtf in Resources */,
+				F6A0A8D81651429200AD429B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A0A8DB1651429200AD429B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A0A8E91651429200AD429B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6A0A8DC1651429200AD429B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6A0A8B91651429100AD429B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A0A8D51651429100AD429B /* AppDelegate.m in Sources */,
+				F6A0A9121651433000AD429B /* compDecl.cpp in Sources */,
+				F6A0A9131651433000AD429B /* compLua.cpp in Sources */,
+				F6A0A9141651433000AD429B /* component.cpp in Sources */,
+				F6A0A9151651433000AD429B /* componentStore.cpp in Sources */,
+				F6A0A9161651433000AD429B /* entity.cpp in Sources */,
+				F6A0A9171651433000AD429B /* entityManager.cpp in Sources */,
+				F6A0A9181651433000AD429B /* gl.cpp in Sources */,
+				F6A0A9191651433000AD429B /* luaMap.cpp in Sources */,
+				F6A0A91A1651433000AD429B /* luaSystem.cpp in Sources */,
+				F6A0A91B1651433000AD429B /* luaTest.cpp in Sources */,
+				F6A0A91C1651433000AD429B /* main.cpp in Sources */,
+				F6A0A91D1651433000AD429B /* movementSystem.cpp in Sources */,
+				F6A0A91E1651433000AD429B /* perfMeasureSystem.cpp in Sources */,
+				F6A0A91F1651433000AD429B /* system.cpp in Sources */,
+				F6A0A9201651433000AD429B /* testRenderSystem.cpp in Sources */,
+				F6A0A9211651433000AD429B /* world.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A0A8D91651429200AD429B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A0A8EC1651429200AD429B /* phoenixTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6A0A8E31651429200AD429B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A0A8BC1651429100AD429B /* phoenix */;
+			targetProxy = F6A0A8E21651429200AD429B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6A0A8CA1651429100AD429B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A0A8CB1651429100AD429B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6A0A8D01651429100AD429B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A0A8D11651429100AD429B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F6A0A8D61651429200AD429B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A0A8D71651429200AD429B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F6A0A8E71651429200AD429B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A0A8E81651429200AD429B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6A0A8ED1651429200AD429B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F6A0A8EE1651429200AD429B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6A0A8F01651429200AD429B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phoenix/phoenix-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../../include/**";
+				INFOPLIST_FILE = "phoenix/phoenix-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/glfw/cocoa\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6A0A8F11651429200AD429B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phoenix/phoenix-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../../include/**";
+				INFOPLIST_FILE = "phoenix/phoenix-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/glfw/cocoa\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6A0A8F31651429200AD429B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/phoenix.app/Contents/MacOS/phoenix";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phoenix/phoenix-Prefix.pch";
+				INFOPLIST_FILE = "phoenixTests/phoenixTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F6A0A8F41651429200AD429B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/phoenix.app/Contents/MacOS/phoenix";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phoenix/phoenix-Prefix.pch";
+				INFOPLIST_FILE = "phoenixTests/phoenixTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6A0A8B71651429100AD429B /* Build configuration list for PBXProject "phoenix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A0A8ED1651429200AD429B /* Debug */,
+				F6A0A8EE1651429200AD429B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A0A8EF1651429200AD429B /* Build configuration list for PBXNativeTarget "phoenix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A0A8F01651429200AD429B /* Debug */,
+				F6A0A8F11651429200AD429B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A0A8F21651429200AD429B /* Build configuration list for PBXNativeTarget "phoenixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A0A8F31651429200AD429B /* Debug */,
+				F6A0A8F41651429200AD429B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6A0A8B41651429100AD429B /* Project object */;
+}

@@ -36,7 +36,7 @@ RANLIB      = ranlib
 DYLIBFLAGS  = -framework Cocoa -framework OpenGL \
               -dynamiclib -Wl,-single_module -compatibility_version 1 \
               -current_version 1 -install_name @executable_path/libglfw.dylib
-HEADERS     = ../../include/GL/glfw.h ../internal.h platform.h
+HEADERS     = ../../../include/GL/glfw.h ../internal.h platform.h
 
 
 ##########################################################################
