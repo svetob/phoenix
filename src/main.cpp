@@ -54,7 +54,7 @@ int main (int argc, char** argv)
     luaMapClasses(L);
 
     // Load test file
-    luaLoadFile(L, "lua\\entity_myname.lua");
+    luaLoadFile(L, "lua/entity_myname.lua");
     
     // Init graphics
     if ( !ogl::initGL(480,640) )
@@ -68,7 +68,7 @@ int main (int argc, char** argv)
     world->addSystem(new TestRenderSystem());
     world->addSystem(new PerformanceMeasureSystem());
     world->addSystem(new MovementSystem());
-    world->addSystem(new LuaSystem());
+    //world->addSystem(new LuaSystem());
 
     for (int i = 0; i < 5; i++)
     {

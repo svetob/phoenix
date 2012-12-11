@@ -52,7 +52,7 @@ struct TestEntity: public less<Entity*>
 
 template <class T> inline void copySet(const set<T>* from, const set<T>* to)
 {
-    set<T>::iterator it;
+    typename set<T>::iterator it;
     for (it = from->begin(); it != from->end(); ++it)
         to->insert(*it._Ptr);
 }
@@ -149,7 +149,7 @@ const set<Entity*>* EntityManager::getByComponent(COMP_TYPE t)
 
 set<Entity*>* EntityManager::getByComponents(vector<COMP_TYPE>* cts)
 {
-    int s = cts->size();
+    long s = cts->size();
     if (s == 0)
         return NULL;
     else if (s == 1)
@@ -167,14 +167,14 @@ set<Entity*>* EntityManager::getByComponents(vector<COMP_TYPE>* cts)
 
         // Get first item
         do {
-            first = getByComponent(*it._Ptr);
+            first = getByComponent(*it);
             ++it;
         } while (first == NULL && it != cts->end());
 
         // Then perform intersection on subsequent items
         while (it != cts->end() )
         {
-            next = getByComponent(*it._Ptr);
+            next = getByComponent(*it);
             if (next != NULL)
             {
                 buffer = new set<Entity*, less<Entity*>, allocator<Entity*>>(compEntity);

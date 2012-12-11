@@ -12,7 +12,7 @@ bool ComponentStore::add(IComponent* c)
     else
     {
         // Value does not exist already, insert value
-        store.insert(lb, std::map<COMP_TYPE, IComponent*>::value_type(t, c));
+        store.insert(std::map<COMP_TYPE, IComponent*>::value_type(t, c));
         return true;
     }
 }
@@ -42,7 +42,7 @@ bool ComponentStore::hasAll(std::vector<COMP_TYPE>* cts)
     std::vector<COMP_TYPE>::iterator it;
     for (it = cts->begin(); it != cts->end(); ++it)
     {
-        COMP_TYPE t = *it._Ptr;
+        COMP_TYPE t = *it;
         lb = store.lower_bound(t);
         if (lb == store.end() || store.key_comp()(t, lb->first))
             return false;

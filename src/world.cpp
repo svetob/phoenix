@@ -10,7 +10,7 @@ void World::runOnce()
 
     for (it = systems.begin(); it != systems.end(); ++it)
     {
-        s = *it._Ptr;
+        s = *it;
         cts = s->getRequiredComponents();
         if (cts->size() == 0)
         {
