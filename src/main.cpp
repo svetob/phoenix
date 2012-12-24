@@ -68,7 +68,7 @@ int main (int argc, char** argv)
     world->addSystem(new TestRenderSystem());
     world->addSystem(new PerformanceMeasureSystem());
     world->addSystem(new MovementSystem());
-    //world->addSystem(new LuaSystem());
+    world->addSystem(new LuaSystem());
 
     for (int i = 0; i < 5; i++)
     {
